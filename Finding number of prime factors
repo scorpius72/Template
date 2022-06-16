@@ -4,7 +4,7 @@
 		
 		int k = n;
 		
-		for (int x=0;x<(ll)prime.size() && n;x++){
+		for (int x=0;prime[x]*prime[x]<=n && x<(ll)prime.size() && n;x++){
 			int c = 0;
 			if (prime[x]>=k) break;
 			while (n%prime[x]==0){
