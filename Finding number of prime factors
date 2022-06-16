@@ -1,7 +1,6 @@
 // after finding all the prime number range (sqrt(n)) then
 
-    int ans = 1;
-		
+    		int ans = 1;
 		int k = n;
 		
 		for (int x=0;prime[x]*prime[x]<=n && x<(ll)prime.size() && n;x++){
@@ -11,11 +10,10 @@
 				c++;
 				n/=prime[x];
 			}
-			//if (prime[x]*prime[x]==k) c--;
 			ans*=(c+1);
 		}
     
-    if (n>1){
+    		if (n>1){
 			ans*=2;
 		}
     
