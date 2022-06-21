@@ -1,0 +1,16 @@
+ls -> show all the folder in the current directory
+cd -> change directory
+
+// main part //
+after compile ----> F9 
+	
+1.run the code --->  ./file_name
+
+2.find the runtime ---> time ./file_name
+
+3.take input from another file like test case ---> ./a < in  "here 'in' is the file name"
+
+4. create new test case file ---> cat > in2 "Then press enter then give all the input and here in2 is the file name"
+
+5. cat file_name // show the tast case file value in the terminal
+
