@@ -1,0 +1,22 @@
+// Disktra algorithm...
+
+priority_queue < pair<long long,int> , vector< pair<long long,int> >, greater< pair<long long,int> >> q ; // min heap
+
+    q.push({0,1});
+    cost[1] = 0; // distance array..
+
+    while (!q.empty()){
+        int  node = q.top().second;
+        int co = q.top().first;
+        q.pop();
+	   
+        if (cost[node]<co) continue;
+
+        for (auto x:v[node]){
+            if (cost[node]+x.second<cost[x.first]){
+                parent[x.first] = node;
+                cost[x.first] = cost[node] + x.second;
+                q.push({cost[x.first],x.first});
+            }
+        }
+    }
