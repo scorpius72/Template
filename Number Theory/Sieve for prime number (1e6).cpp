@@ -23,15 +23,15 @@ SieveOfEratosthenes(maximumPrimeNumberCount);
  
     for (int i = 1; i <= maximumPrimeNumberCount; i++) {
         if (i == 2){
-            cout << i << ' ';
+            //cout << i << ' ';
             prime.push_back(i);
         }
              
         else if (i % 2 == 1 && Primes[i / 2] == 0){
-            cout << i << ' ';
+            //cout << i << ' ';
             prime.push_back(i);
         } 
     }
-    cout << endl;
-    see(prime.size());
+    //cout << endl;
+    //see(prime.size());
     
