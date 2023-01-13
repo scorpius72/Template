@@ -16,9 +16,13 @@ void SieveOfEratosthenes(int n)
 
 int maximumPrimeNumberCount = 1e6+10;
 
-// now in integer main section
 
-SieveOfEratosthenes(maximumPrimeNumberCount);
+signed main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+    SieveOfEratosthenes(maximumPrimeNumberCount);
     vector < int > prime;
  
     for (int i = 1; i <= maximumPrimeNumberCount; i++) {
@@ -34,4 +38,6 @@ SieveOfEratosthenes(maximumPrimeNumberCount);
     }
     //cout << endl;
     //see(prime.size());
+
+}
     
