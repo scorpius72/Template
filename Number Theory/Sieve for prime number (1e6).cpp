@@ -1,5 +1,3 @@
-// this is for finding the prime number //
-
 bitset<500000001> Primes;
 void SieveOfEratosthenes(int n)
 {
@@ -12,15 +10,10 @@ void SieveOfEratosthenes(int n)
     }
 }
 
-// this must be in the global section // this is the range
-
 int maximumPrimeNumberCount = 1e6+10;
 
-
-signed main()
+void solve()
 {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
 
     SieveOfEratosthenes(maximumPrimeNumberCount);
     vector < int > prime;
@@ -40,4 +33,19 @@ signed main()
     //see(prime.size());
 
 }
-    
+
+signed main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+
+
+    int ca; cin >> ca;
+    int tttt = 0;
+    while (ca--){
+        tttt++;
+        //cout << "Case :"<< tttt <<" ";
+        solve();
+    }
+}
